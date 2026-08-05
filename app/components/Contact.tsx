@@ -93,7 +93,7 @@ export default function Contact() {
                     </p>
 
                     <a
-                      href="https://wa.me/573156822788"
+                      href="https://wa.me/573156827688"
                       className="text-lg hover:text-violet-400 transition"
                     >
                       +57 315 682 2788
@@ -168,7 +168,7 @@ export default function Contact() {
               <motion.a
                 whileHover={{ scale: 1.04 }}
                 whileTap={{ scale: .97 }}
-                href="https://wa.me/573156822788"
+                href="https://wa.me/573156827688"
                 className="
                   mt-10
                   inline-flex

@@ -44,7 +44,7 @@ const projects: Project[] = [
     subtitle: "Sistema de gestión de pedidos para restaurante",
     description:
       "Aplicación web desarrollada para mejorar la comunicación entre el área que recibe los pedidos y la cocina. Permite registrar pedidos rápidamente, enviarlos a una pantalla independiente y controlar su estado hasta que estén listos para entregar.",
-    image:"/public/rincon-fredy.png",
+    image:"public/projects/rincon-fredy.png",
     tech: ["Flask", "Python", "SQLite", "HTML", "CSS", "JavaScript"],
     status: "Proyecto completado",
     progress: 100,

@@ -44,10 +44,10 @@ const projects: Project[] = [
     subtitle: "Sistema de gestión de pedidos para restaurante",
     description:
       "Aplicación web desarrollada para mejorar la comunicación entre el área que recibe los pedidos y la cocina. Permite registrar pedidos rápidamente, enviarlos a una pantalla independiente y controlar su estado hasta que estén listos para entregar.",
-    image:"public/projects/rincon-fredy.png",
+    image: "/projects/rincon-fredy.png",
     tech: ["Flask", "Python", "SQLite", "HTML", "CSS", "JavaScript"],
-    status: "Proyecto en desarrollo",
-    progress: 80,
+    status: "Proyecto completado",
+    progress: 100,
     github: "https://github.com/omar-card/rincon-fredy",
     features: [
       "Registro rápido de pedidos",
@@ -66,10 +66,9 @@ export default function Projects() {
       id="proyectos"
       className="relative overflow-hidden px-6 py-32 md:px-8"
     >
-      {/* Luces de fondo */}
+      {/* Luces decorativas */}
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute left-1/2 top-1/3 h-[900px] w-[900px] -translate-x-1/2 rounded-full bg-cyan-500/10 blur-[180px]" />
-
         <div className="absolute -right-48 bottom-20 h-[500px] w-[500px] rounded-full bg-violet-500/10 blur-[150px]" />
       </div>
 
@@ -105,7 +104,7 @@ export default function Projects() {
           y fortalecer la presencia digital de empresas y negocios.
         </motion.p>
 
-        {/* Proyectos */}
+        {/* Lista de proyectos */}
         <div className="mt-20 space-y-16">
           {projects.map((project, index) => {
             const isCompleted = project.progress === 100;
@@ -138,7 +137,7 @@ export default function Projects() {
                 "
               >
                 {/* Imagen */}
-                <div className="relative min-h-[360px] overflow-hidden bg-slate-900">
+                <div className="relative min-h-[380px] overflow-hidden bg-slate-900">
                   <img
                     src={project.image}
                     alt={`Vista del proyecto ${project.title}`}
@@ -154,22 +153,8 @@ export default function Projects() {
                     "
                   />
 
-                  {/* Oscurecimiento suave */}
-                  <div
-                    className="
-                      absolute
-                      inset-0
-                      bg-gradient-to-t
-                      from-slate-950/70
-                      via-transparent
-                      to-transparent
-                      lg:bg-gradient-to-r
-                      lg:from-transparent
-                      lg:to-slate-950/25
-                    "
-                  />
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent" />
 
-                  {/* Categoría */}
                   <span
                     className="
                       absolute
@@ -178,7 +163,7 @@ export default function Projects() {
                       rounded-full
                       border
                       border-white/15
-                      bg-slate-950/60
+                      bg-slate-950/70
                       px-4
                       py-2
                       text-xs
@@ -308,11 +293,11 @@ export default function Projects() {
                   <div className="mt-10 flex flex-wrap gap-4">
                     {project.demo && (
                       <motion.a
-                        whileHover={{ scale: 1.05, y: -2 }}
-                        whileTap={{ scale: 0.97 }}
                         href={project.demo}
                         target="_blank"
                         rel="noopener noreferrer"
+                        whileHover={{ scale: 1.05, y: -2 }}
+                        whileTap={{ scale: 0.97 }}
                         className="
                           rounded-xl
                           bg-gradient-to-r
@@ -333,11 +318,11 @@ export default function Projects() {
 
                     {project.github && (
                       <motion.a
-                        whileHover={{ scale: 1.05, y: -2 }}
-                        whileTap={{ scale: 0.97 }}
                         href={project.github}
                         target="_blank"
                         rel="noopener noreferrer"
+                        whileHover={{ scale: 1.05, y: -2 }}
+                        whileTap={{ scale: 0.97 }}
                         className="
                           rounded-xl
                           border

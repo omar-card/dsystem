@@ -139,18 +139,37 @@ export default function Projects() {
               >
                 {/* Imagen */}
                 <div className="relative min-h-[360px] overflow-hidden bg-slate-900">
-                  <div className="relative min-h-[360px] overflow-hidden bg-slate-900">
-                      <img
-                        src="/projects/rincon-fredy.png"
-                        alt="Aplicación de pedidos Rincón de Fredy"
-                        className="absolute inset-0 h-full w-full object-cover"
-                      />
-                    </div>
-                                      
+                  <img
+                    src={project.image}
+                    alt={`Vista del proyecto ${project.title}`}
+                    className="
+                      absolute
+                      inset-0
+                      h-full
+                      w-full
+                      object-cover
+                      transition-transform
+                      duration-700
+                      group-hover:scale-105
+                    "
+                  />
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-slate-950/25" />
+                  {/* Oscurecimiento suave */}
+                  <div
+                    className="
+                      absolute
+                      inset-0
+                      bg-gradient-to-t
+                      from-slate-950/70
+                      via-transparent
+                      to-transparent
+                      lg:bg-gradient-to-r
+                      lg:from-transparent
+                      lg:to-slate-950/25
+                    "
+                  />
 
-                  {/* Categoría sobre la imagen */}
+                  {/* Categoría */}
                   <span
                     className="
                       absolute

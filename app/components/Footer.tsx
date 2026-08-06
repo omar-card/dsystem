@@ -8,6 +8,7 @@ const navigation = [
   { label: "Proyectos", href: "#proyectos" },
   { label: "Sobre mí", href: "#about" },
   { label: "Contacto", href: "#contacto" },
+  { label: "Bitácora", href: "/bitacora" },
 ];
 
 const technologies = [

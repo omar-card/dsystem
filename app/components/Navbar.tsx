@@ -160,6 +160,36 @@ className="..."
 >
   Contacto
 </a>
+            <a
+  href="#"
+  className="
+    relative
+    text-gray-300
+    hover:text-white
+    transition-colors
+    duration-300
+    after:absolute
+    after:left-0
+    after:-bottom-1
+    after:h-[2px]
+    after:w-0
+    after:bg-violet-400
+    after:transition-all
+    after:duration-300
+    hover:after:w-full
+  "
+>
+  Contacto
+</a>
+<a href="#telecomunicaciones">
+  Telecomunicaciones
+</a>
+
+
+
+
+
+
         </div>
 </div>
         

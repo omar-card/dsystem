@@ -13,6 +13,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Stats from "./components/Stast";
+import Telecommunications from "./components/Telecommunications";
 
 export default function Home() {
   return (
@@ -35,6 +36,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Services />
+      <Telecommunications />
       <Projects />
       <About />
       <Stats />

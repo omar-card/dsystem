@@ -165,6 +165,15 @@ export default function Hero() {
   </motion.a>
 
 </div>
+<div className="flex flex-wrap gap-4 mt-8">
+  <a
+    href="/bitacora"
+    className="px-6 py-3 rounded-xl border border-white/20 bg-white/5 backdrop-blur-md hover:bg-white/10 text-white font-semibold transition flex items-center gap-2"
+  >
+    📓 Bitácora Técnica
+    <span>→</span>
+  </a>
+</div>
 
 {/* Esfera tecnológica */}
 <motion.div
